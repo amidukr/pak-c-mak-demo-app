@@ -1,0 +1,12 @@
+language: cpp
+
+dist: xenial
+
+compiler:
+  - gcc
+
+before_script:
+  - ./scripts/configure-ubuntu-xenial.sh
+  - ./scripts/configure-cmake-build.sh
+  - cd build
+
